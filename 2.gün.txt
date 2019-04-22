@@ -1,0 +1,31 @@
+SubdomainTakeOver..................../
+-----------------------------------------------------------------------------------/
+dig cname maps.oracle.com = komutu ile subdomain ele geçirme iþlemi yapýlabilir.
+nerden alýndýgýný ögrenip kendimize servis ayýrabiliyormuyuz bakýyoruz.
+Subdomain takeovver olan bir yerden servis aldýk siteyi ekledik sitenin bize ait 
+olmadýgýný dogrulamadýk siteyi baþkasý alýnca subdomaintakeover oluyor.
+------------------------------------------------------------------------------------/
+fotoforensic = fotografýn içinde gizli veri varmý yokmu kontrol saglanýr.
+---------------------------------------------------------------------------------------------------------------------------/
+Bizden nerde veri alýp onu degiþtirmemize izin veriyorsa orda açýk aranabilir.
+Referer baþlýgý hangi siteden geldiginiz gösterir normalde. sunucu o kodu çalýþtýrdýgýnda xss kodunu çalýþtýrabiliyor.
+.htacces dosyasý atýp içeri burdan php yüklüyse php dizinlerini bu dosyada derle diyoruz php kodunu derleyip çalýþtýrýyor.
+--------------------------------------------------------------------------------------------------------------------------/
+Shell upload metesploit.Araþtýr.
+---------------------------------------------------------------------------------------------------------------------------/
+nmap parametreleri araþtýr iþe yarar parametleri not al
+-------------------------------------------------------------------------------------------------------------------------------/
+wireshark ag trafigi analizi = nmap ile tarama yaparken ayný zamanda wireshar ile ne yaptýgýný kontrol edebiliriz 
+ve çalýþma mantýgýný anlamamýzý saglar.Çeþitli bilgilerden faydalanarak kaynak kod hedef kod ve ne döngügünü görebiliriz.
+Tcp/ip modelini iyice anlamak lazým.
+burpsuite intruder ve repeat detaylý þekilde araþtýr.
+--------------------------------------------------------------------------------------------------------------------------------/
+dirbuster billu box çözümleri sýk kullanýlanlara eklendi.
+---------------------------------------------------------------------------------------------------------------------------------------------/
+c.php okuduk mysql oldugunu ögrendik.Bilgileri çekmeye baþladýk curl ile bilgileri çekip anlamlandýrmaya baþladýk.
+apache çalýþdýgýný ögrendik.ayar dosyalarýný php.info dosylarýna gittik.config dosyasýný okuyoruz.önemli olan nerede yüklü olduguydu.
+config dosyasý içinde þifreler yazýyor.curl ile çekip okuyoruz.ve ssh yapýyorz.yerel dosyayý okuma zafiyetinden root kullancýsýný almýþ olduk
+------------------------------------------------------------------------------------------------------------------------------------------------/
+lazy admin corp'a geçiþ yaptýk-çözdük
+hack the box'a geçiþ yaptýk 
+--------------------------------------------------------------------------------------------------------------------------------------------------/

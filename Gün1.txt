@@ -1,0 +1,60 @@
+Xss Kategorileri /
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
+1-)Self----------------------------------------------------------------------------------/
+Baþkasýna yansýtalamayan kendimizde görünen zafiyet.
+Ýnternette bi siteye girerken istek yolluyoruz.O isteklerde bilgilerimiz gidiyor.
+veri gönderilirken degiþtiriliyor.(man in the middle)
+Burp intruder.
+Cookiler
+----------------------------------------------------------------------------------------/
+Double  vpn güvenilir baglantýlar oluþturmak için
+Tripple vpn üç sunucudan çýkýp tor'a baglanarak daha güvenli ama yavaþlýgýda var.
+NordVpn verileri þifreleyerek aktarýr.
+---------------------------------------------------------------------------------------/
+2-)Reflected-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
+Web for pentester ilk örnek =| <img src=xss onerror=alert(1)> |
+https://xsshunter.com/ 	    = bize bir subdomain veriyor.Önemli olan mantýgý anlamak.Hazýr araçlar mantýgý anlamak için
+Farklý payload'lar sunarak. Sahte üyelik oluþturarak üye oluyoruz.Bize verilen subdomaine gidioruz.Url encode ile bypass iþlemleri 
+gerçekleþtirebiliriz.
+Origin = hangi ip adresi hangi host oldugunu gösterir.
+Referer = baþka siteden gelmedigi için gözükmedi nerden.
+phpsessionid=
+md5 þifrelemeler artýk güvenli degil. reverse md5 siteleri ile rahatlýkla kýrýlabilir.
+[ bae-box zafiyetli bir sanal makine = bWAPP sitesinde örnekler var,yorum yapma alaný var, yorum yapma alanýna script kodu yolluyoruz ve kod çalýþýyor,
+admin bunu görüntüler phpsessionid alýndý burp açýyoruz proxy açýyoruz siteye istegi yapýyoruz burda 
+php session ýd kýsmýna çaldýgýmýz degeri yapýþtýrýyoruz gönderiyoruz admin oturumuyla oturum açmýþ oluyoruz]
+site bizden bir veri alýp bunu degiþtirebiliyorsa zafiyetlidir.sitenin bizden aldýgý degeri degiþtirebiliyorsak,zafiyet olabilir.
+zararlý bir kod yazabiliryoruz bu zararlý kodu baþkasýna gönderebiliriyoruz.Zararlý kodun içerigine görede ordan bilgileri alýyoruz.Please Head xsshunter.
+Javascript ile ekran görüntüsü nasýl alýnýr. bilgi nasýl çekilir gibi kodlarý ögrenmemiz gerekiyor.Search.php javascript kodunu ekliyoruz.url encode ediyoruz.
+[Owasp xenotix xss exploit framework][Owasp Takip et içerisinde çok iyi veriler var.][] içine denecek X atýyoruz. Fuzx diyoruz sn sini belirliyoruz.önce sn sini belirliyoruz.
+Ara Dönem[Tersine Mühendislik ve Zararlý Yazýlým Analizi(cpu,ram,disk'de veriler nasýl tutuluyor.linux ve windows makinelerde terminali advenced derecede bilmek gerek.)[debugger](assemblyi bilmek gerek)]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
+/-e-k-l-e-n-t-i-l-e-r-/
+best proyx switcher >
+disable webRTC	    >
+NoScript  	    >
+Shodan		    >
+Ghost		    >
+webrpc	 	    >
+10 minute mail	    >
+/---------------------/
+Güvenli duvar atlama xss ile root yetkisi alma 
+[ CTF'ler olucak  onlara hazýrlan ]
+Yönlendirme yapýlýrken
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
+Sitenin subdomainleri bulunur.Tespitleri yapýlýr.pentesttools.com ücretsiz olarak 1 kredi veriyor.Subdomainler bulunuyor.Bununda dorplarý alýyor -academy diyerek bi sonraki aramamýzda çýkmasýný engelliyoruz.
+sitenin dns kaydýný tutupda veri bulabilir.(dnsdb)VirusTotal sitesinden domain taratýp o domaine ait subdomainleri veriyor olmasý lazým.Giriþ yaptýktan sonra.Bunun için araçlar var.aquatoom subdomain tespitlerini araþtýr.Nasýl oluyor mantýkarýný anla.
+Elle denemek yerine çalýþma mantýklarýný anlayýp araçlarý kulllanmak daha verimli olur.
+Oracle dönücek olursak comunitye bakayýruz.Bilgileri güncellerken bir dogrulama istegi gitmiyorsa ters týklayýp üret diyip html kopyalayýp çýktýyý alýyoruz.Hesap açýyoruz profil ayarlarýna giriyoruz http bilgiilerinde ad soyad kýsmýný degiþtirdik html çýktýsýný almasý için bir html kodlarýný aldýk post istegi yaptýrdýgý kýsmý
+biz bunlarý degiþtiriyoruz kaydediyoruz geri arada yolluyoruz.token zafiyet olmasýný engellemek için.
+CSRF = Oturumu açýk unutulan kullanýcýlarýn parolalarýný degiþtirme.html kodlarýnda ufak bi degiþiklik ile login olan kullanýcýnýn parola bilgileri degiþtirilebilir.
+Shodan = internette ne kadar ip adresi varsa tarar ve listeler. non-zero zafiyeti bu zafiyetin mantýgý þu bu modemin geliþtiricileri sizin belirlediginiz parolayý non-zero diye bir dosyada tutuyorlar ve bu internete açýk.Shodan da arattýk bir ip adresi bulduk admin admin denedik girdi :( yazýk oldu.Adamýn wireless parolasý alýnýr.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
+Rom-0 konfigrasyon dosylarý indirilir.Parolo çözülür.Sýzma iþlemi gerçekleiþtirilir.Rom-0 testi yapýlýr adreste zafiyet var ise githubdan bir python kodu bulduk algoritmayý inceledik daha sonra dosyayý indirdik "python dosya_adý rom-o" kodu verince bize parolanýn çýktýsýný verdi dogrumu diye kontrol sagladýk ve sýzma iþlemi baþarýlý.
+yine ayný marka bir tp link modem geldi.Yaptýgýmýz istekte Token varmý onu kontrol ediyoruz.Repetera atýp degiþtirebilecegimiz ne var kontrol ediyoruz.Html üretip degiþklikleri yapýp gönderiyoruz.Ýstegi kontrol ediyoruz çalýþýyormu diye. degiþiklik baþarýlý.
+ipoggler diye bir site var adama resim vb birþey yolluyoruz o adrese ulaþýnca adamýn ip-adresi bize ulaþýyor.
+wps = pin zafiyetli modem
+Hackerone'dan raporlanan zafiyetleri inceleyerek nasýl bir zafiyet raporu yazýlabilir ögrebiliriz.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
+aquatone = subdomainlerin 80 ve 443 portlarý açýk mý onun için kontrol saglar.Kullanýþlý bir script kullanmakta fayda var.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/
